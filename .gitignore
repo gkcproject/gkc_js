@@ -1,0 +1,7 @@
+dist/
+.vscode/
+node_modules/
+.DS_Store
+.gkc
+.cache
+solar.development.json

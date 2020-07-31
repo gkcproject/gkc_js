@@ -1,0 +1,8 @@
+*.tgz
+TODO.md
+.vscode
+yarn*
+.env
+src
+.gkc
+.cache

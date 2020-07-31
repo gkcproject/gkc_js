@@ -1,0 +1,41 @@
+{
+  "name": "gkc_js",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint  --project tsconfig.json",
+    "build:umd": "webpack --config webpack.config.js"
+  },
+  "npmName": "gkc_js",
+  "npmFileMap": [{
+    "basePath": "/dist/",
+    "files": [
+      "*.js"
+    ]
+  }],
+  "dependencies": {
+    "axios": "^0.18.1",
+    "btoa": "^1.1.2",
+    "eventemitter3": "^2.0.3",
+    "qtumjs-ethjs-abi": "^1.0.3",
+    "url-parse": "^1.4.7"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.1",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^2.2.46",
+    "@types/node": "^8.0.31",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.1.4",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  }
+}
